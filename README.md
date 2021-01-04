@@ -2,4 +2,4 @@
 
 ### Pthread 
  pthread code need to be compiled with pthread flag
- ``` gcc -pthread -o example.o example.c
+ ``` gcc -pthread -o example.o example.c ```
