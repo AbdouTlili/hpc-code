@@ -1,0 +1,3 @@
+#ignoring object files 
+*.o
+
