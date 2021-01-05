@@ -1,10 +1,13 @@
 #include <pthread.h>
 #include <stdio.h>
+#include <unistd.h>
 #define NUM_THREADS 5
 
 void* printHello(void *threadid){
     long tid ;
     tid = (long) threadid;
+    int s =0;
+    if(tid==(long)1){sleep(5);}
     printf("Hello it's me, thread %ld ! \n",tid);
     pthread_exit(NULL);
 }
